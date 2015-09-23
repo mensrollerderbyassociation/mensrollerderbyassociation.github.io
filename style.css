@@ -1,0 +1,113 @@
+      body {
+/*        background:
+          linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+          ),
+          url(background.jpg) no-repeat center center fixed;
+*/        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 125%;
+        margin: 0;
+      }
+      .wrapper { padding: 3em; }
+        .content {
+          padding: 0.8em 2.5em;
+          max-width: 80%;
+          min-width: 600px;
+          margin: 0 auto;
+          background: rgba(155,155,155,0.8);
+          border-radius: 10px;
+          box-shadow: 0 0 1.5em rgba(0,0,0,0.5);
+        }
+          ul {
+            margin: 0;
+            padding: 0;
+          }
+            li {
+              list-style-type: none;
+              padding: 0 0 0 24px;
+              min-height: 20px;
+            }
+              li.up { background: url(tick.png) no-repeat left 4px; }
+              li.warn { background: url(error.png) no-repeat left 4px; }
+              li.down { background: url(exclamation.png) no-repeat left 4px; }
+
+          .down h1 span,
+          li.down span { background-color: #d00; }
+          .warn h1 span,
+          li.warn span { background-color: #e88517; }
+          .up h1 span,
+          li.up span { background-color: #44aa62; }
+
+          .logo {
+            display: inline-block;
+            height: 4.5em;
+          }
+            .logo img {
+              height: 100%;
+              -webkit-filter: grayscale(100%);
+              filter: grayscale(100%);
+              opacity: 0.7;
+            }
+          header {
+            display: inline-block;
+          }
+
+          h1 {
+            font-family: 'Droid Sans Mono', monospace;
+            margin: 1em 0 0.4em;
+          }
+          .up .summary:after { content: 'everything is operating normally.'; }
+          li.up span:after { content: 'operating normally'; }
+          .warn .summary:after { content: 'one or more services are having some difficulties.'; }
+          li.warn span:after { content: 'having some difficulties'; }
+          .down .summary:after { content: 'there is a significant outage affecting one or more services.'; }
+          li.down span:after { content: 'suffering a significant outage'; }
+
+          .summary { margin: 0; }
+
+          h3 { margin: 0; }
+          p {margin: 0.5em 0;}
+          a,
+          a:visited {
+            color: #048;
+            text-decoration: none;
+          }
+          a:active,
+          a:focus,
+          a:hover {
+            color: #026;
+            text-decoration: underline;
+          }
+          li { margin: 1em; }
+            span {
+              color: #fff;
+              padding: 0.1em;
+            }
+
+          dt {
+            color: #444;
+            font-size: 0.9em;
+          }
+          dd { margin: 0 0 0 1em; }
+          footer {
+            color: #444;
+            font-size: 0.7em;
+            text-align: right;
+          }
+            footer span,
+            footer a,
+            footer a:visited {
+              color: #444;
+              text-decoration: none;
+            }
+            footer a:active,
+            footer a:focus,
+            footer a:hover {
+              color: #222;
+              text-decoration: underline;
+            }
